@@ -18,13 +18,15 @@ try {
 
   const input = await fetchInput(dayNumber);
 
-
   console.log(`Day ${dayNumber} Part1 Solution:`);
   console.log(solve1(input));
   console.log(`Day ${dayNumber} Part2 Solution:`);
   console.log(solve2(input));
-
-} catch (error: any) {
-  console.error(`Error solving day ${dayNumber}:`, error.message);
+} catch (error: unknown) {
+  if (error instanceof Error) {
+    console.error(`Error solving day ${dayNumber}:`, error.message);
+  } else {
+    console.error(`Unknown error occurred while solving day ${dayNumber}`);
+  }
   Deno.exit(1);
 }
