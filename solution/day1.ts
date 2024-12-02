@@ -1,6 +1,8 @@
+import { splitLines } from "./utils.ts";
+
 export const solve1 = (input: string): number => {
   const [arr1, arr2]: [number[], number[]] = [[], []];
-  const inputSplitted = input.split(/\r?\n|\r|\n/g);
+  const inputSplitted = splitLines(input);
   inputSplitted.forEach((v) => {
     if (!v.trim()) return;
     const [v1, v2] = v.split(/\s+/).map(Number);
@@ -21,7 +23,7 @@ export const solve1 = (input: string): number => {
 export const solve2 = (input: string): number => {
   const [arr1, arr2]: [number[], number[]] = [[], []];
 
-  const inputSplitted = input.split(/\r?\n|\r|\n/g);
+  const inputSplitted = splitLines(input);
 
   inputSplitted.forEach((v) => {
     if (!v.trim()) return;

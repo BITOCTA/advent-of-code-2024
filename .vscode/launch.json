@@ -19,7 +19,7 @@
         "--allow-all"
       ],
       "args": [
-        "1"
+        "2"
       ],
       "attachSimplePort": 9229
     }

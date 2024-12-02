@@ -17,6 +17,8 @@ Code website and cached locally.
 
 ```
 advent-of-code/
+├── .vscode/
+│   └── launch.json     # Sample config for debugging
 ├── fetchInput.ts       # Fetches and caches input files
 ├── input/              # Cached input files
 ├── main.ts             # Entry point for running solutions
