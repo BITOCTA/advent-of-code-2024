@@ -3,7 +3,8 @@
   "specifiers": {
     "jsr:@std/assert@1": "1.0.8",
     "jsr:@std/dotenv@~0.225.2": "0.225.2",
-    "jsr:@std/internal@^1.0.5": "1.0.5"
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "npm:lodash@^4.17.21": "4.17.21"
   },
   "jsr": {
     "@std/assert@1.0.8": {
@@ -19,10 +20,24 @@
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     }
   },
+  "npm": {
+    "lodash@4.17.21": {
+      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+    }
+  },
+  "redirects": {
+    "https://esm.sh/v135/@types/lodash@4.17.13/index": "https://esm.sh/v135/@types/lodash@4.17.13/index~.d.ts",
+    "https://esm.sh/v135/@types/lodash@~4.17/index.d.ts": "https://esm.sh/v135/@types/lodash@4.17.13/index.d.ts"
+  },
+  "remote": {
+    "https://esm.sh/lodash@4.17.21": "cf3544d5159a7648b25ad21fcf8dbf08a1fbfb1415b70b4163da646ef83eec4a",
+    "https://esm.sh/v135/lodash@4.17.21/denonext/lodash.mjs": "f04a5db09228738fd8cd06b6d1eaf3463b1b639d1529cf11673c3ac7bda1b1a8"
+  },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "jsr:@std/dotenv@~0.225.2"
+      "jsr:@std/dotenv@~0.225.2",
+      "npm:lodash@^4.17.21"
     ]
   }
 }
