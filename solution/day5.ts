@@ -1,5 +1,7 @@
 import { splitAndGroupByEmptyLine } from "./utils.ts";
-import _ from "https://esm.sh/lodash@4.17.21";
+// @deno-types="https://cdn.skypack.dev/@types/lodash?dts"
+import { isEqual } from "https://cdn.skypack.dev/lodash-es?dts";
+
 
 // TODO: refactor
 export const solve1 = (input: string) => {
@@ -38,8 +40,8 @@ export const solve1 = (input: string) => {
   return sum;
 };
 
-const recursion = (cba: Map<string, Set<string>>, arr: string[]) => {
-  let res: string[] = [];
+const recursion = (cba: Map<string, Set<string>>, arr: string[]): string[] => {
+  const res: string[] = [];
   if (arr.length === 0) {
     return [];
   }
@@ -97,7 +99,7 @@ export const solve2 = (input: string) => {
 
     const res = recursion(cannotBeAfter, nums);
 
-    if (!_.isEqual(nums, res)) {
+    if (!isEqual(nums, res)) {
       sum += Number(res[Math.floor(res.length / 2)]);
     }
   }

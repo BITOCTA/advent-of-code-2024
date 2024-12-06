@@ -1,43 +1,20 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@std/assert@1": "1.0.8",
-    "jsr:@std/dotenv@~0.225.2": "0.225.2",
-    "jsr:@std/internal@^1.0.5": "1.0.5",
-    "npm:lodash@^4.17.21": "4.17.21"
+    "jsr:@std/dotenv@~0.225.2": "0.225.3"
   },
   "jsr": {
-    "@std/assert@1.0.8": {
-      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
-      "dependencies": [
-        "jsr:@std/internal"
-      ]
-    },
-    "@std/dotenv@0.225.2": {
-      "integrity": "e2025dce4de6c7bca21dece8baddd4262b09d5187217e231b033e088e0c4dd23"
-    },
-    "@std/internal@1.0.5": {
-      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    "@std/dotenv@0.225.3": {
+      "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
     }
-  },
-  "npm": {
-    "lodash@4.17.21": {
-      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
-    }
-  },
-  "redirects": {
-    "https://esm.sh/v135/@types/lodash@4.17.13/index": "https://esm.sh/v135/@types/lodash@4.17.13/index~.d.ts",
-    "https://esm.sh/v135/@types/lodash@~4.17/index.d.ts": "https://esm.sh/v135/@types/lodash@4.17.13/index.d.ts"
   },
   "remote": {
-    "https://esm.sh/lodash@4.17.21": "cf3544d5159a7648b25ad21fcf8dbf08a1fbfb1415b70b4163da646ef83eec4a",
-    "https://esm.sh/v135/lodash@4.17.21/denonext/lodash.mjs": "f04a5db09228738fd8cd06b6d1eaf3463b1b639d1529cf11673c3ac7bda1b1a8"
+    "https://cdn.skypack.dev/-/lodash-es@v4.17.21-rDGl8YjBUjcrrAbjNrmo/dist=es2019,mode=imports/optimized/lodash-es.js": "4a1b35d34b5e0d3ae68aa46ddaabb9700ccecb75b830974db7c46a271f10daa8",
+    "https://cdn.skypack.dev/lodash-es?dts": "7dc1d11c01e46bf442774791267f7ca93f6cc204451ac648f2560b0cd6c91524"
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/assert@1",
-      "jsr:@std/dotenv@~0.225.2",
-      "npm:lodash@^4.17.21"
+      "jsr:@std/dotenv@~0.225.2"
     ]
   }
 }
